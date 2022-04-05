@@ -91,6 +91,49 @@ class FramerPlugin(     octoprint.plugin.SimpleApiPlugin,
                     minY = rangesTable[1][rangesTable[1].index("Min=") + len("Min=") : rangesTable[1].index(" Max=")]
                     maxY = rangesTable[1][rangesTable[1].index("Max=") + len("Max=") : rangesTable[1].index(" Size=")]
 
+                # If no string found, the type is unknown...  we have to calculate with brute force
+                else:
+                    # Read all the line of the file split into a array per line
+                    allLines = open(filePath).read().split("\n")
+                    
+                    for line in allLines:
+                        if line.startswith("G0") or line.startswith("G1") or line.startswith("G2"):
+                            xCoordLine = "0"
+                            yCoordLine = "0"
+
+                            if "X" in line:
+                                # Grab from X... untill " " (space)
+                                try:
+                                    xCoordLine = line[ line.index("X") + 1 : line[line.index("X") + 1:].index(" ")+line.index("X")+1]
+                                except:
+                                    # if there is exception is because the X command is the end of the line and there is no more spaces
+                                    xCoordLine = line[ line.index("X") + 1 :]
+                                
+                                # If there was a X coordinate in line...
+                                # Now we compare with minX, maxX
+                                if float(xCoordLine) > float(maxX):
+                                    maxX = xCoordLine
+
+                                if float(xCoordLine) < float(minX):
+                                    minX = xCoordLine
+
+
+                            if "Y" in line:
+                                # Grab from Y... untill " " (space)
+                                try:
+                                    yCoordLine = line[ line.index("Y") + 1 : line[line.index("Y") + 1:].index(" ")+line.index("Y")+1]
+                                except:
+                                    # if there is exception is because the Y command is the end of the line and there is no more spaces
+                                    yCoordLine = line[ line.index("Y") + 1 :]
+
+                                # If there was a X coordinate in line...
+                                # Now we compare with minX, maxX
+                                if float(yCoordLine) > float(maxY):
+                                    maxY = yCoordLine
+
+                                if float(yCoordLine) < float(minY):
+                                    minY = yCoordLine
+
             self.moveToLimits(minX, minY, maxX, maxY)
             
 
