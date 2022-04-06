@@ -6,30 +6,19 @@ title: OctoPrint-Framer
 description: Adds frame buttons to the items in the file list which let you verify the area used for the laser/CNC job.
 authors:
 - Ricardo Riet Correa
-license: GPLv3
+license: GNUv3
 
-# TODO
-date: today's date in format YYYY-MM-DD, e.g. 2015-04-21
+date: 2022-04-05
 
 homepage: https://github.com/rriet/OctoPrint-Framer
 source: https://github.com/rriet/OctoPrint-Framer
 archive: https://github.com/rriet/OctoPrint-Framer/archive/master.zip
 
-# TODO
-# Set this to true if your plugin uses the dependency_links setup parameter to include
-# library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
-#follow_dependency_links: false
-
-# TODO
 tags:
-- a list
-- of tags
-- that apply
-- to your plugin
-- (take a look at the existing plugins for what makes sense here)
+- Octoprint
+- Laser
+- CNC
 
-# TODO
-# When registering a plugin on plugins.octoprint.org, all screenshots should be uploaded not linked from external sites.
 screenshots:
 - url: url of a screenshot, /assets/img/...
   alt: alt-text of a screenshot
