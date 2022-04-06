@@ -20,10 +20,10 @@ tags:
 - CNC
 
 screenshots:
-- url: assets/img/screen.png
+- url: /assets/img/plugins/framer/screen.png
   alt: Main screen with Frame button
   caption: Frame button and plugin output
-- url: assets/img/settings.png
+- url: /assets/img/plugins/framer/settings.png
   alt: Settings screen
   caption: Settings screen.
 - ...

@@ -27,8 +27,8 @@ It works by extracting the maximum and minimum X and Y and sending a G0 code to 
 - CNC
 
 ## screenshots:
-![Main screen with Frame button](https://github.com/rriet/OctoPrint-Framer/blob/master/assets/img/screen.png "Frame button and plugin output")
-![Settings screen](https://github.com/rriet/OctoPrint-Framer/blob/master/assets/img/settings.png "Settings screen")
+![Main screen with Frame button](https://github.com/rriet/OctoPrint-Framer/blob/master/assets/img/plugins/framer/screen.png "Frame button and plugin output")
+![Settings screen](https://github.com/rriet/OctoPrint-Framer/blob/master/assets/img/plugins/framer/settings.png "Settings screen")
 
 ## Setup
 
