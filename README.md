@@ -41,7 +41,7 @@ Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bu
 After installation restart OctoPrint, go to the Settings tab and set the CNC/Laser movement speed.
 
 ### Frame function
-- Connect to the CNC/Laser
+- Connect the CNC/Laser
 - Upload and load the Gcode file
 - Home the CNC/Laser or use a G92 code to set the origin point
 - Click the Frame button
