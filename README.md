@@ -1,18 +1,22 @@
 
-layout: plugin
+# OctoPrint-Framer
 
-id: framer
-title: OctoPrint-Framer
-description: Adds frame buttons to the items in the file list which let you verify the area used for the laser/CNC job.
-authors:
+## author:
 - Ricardo Riet Correa
-license: GNUv3
 
-date: 2022-04-05
+## license: 
+GNUv3
+
+## date: 
+2022-04-05
 
 homepage: https://github.com/rriet/OctoPrint-Framer
 source: https://github.com/rriet/OctoPrint-Framer
 archive: https://github.com/rriet/OctoPrint-Framer/archive/master.zip
+
+## Description
+This plugin adds a button to verify the working area of a Gcode on a CNC or Laser cutter.
+It works by extracting the maximum and minimum X and Y and sending a G0 code to move the CNC/Laser to the corner locations.
 
 tags:
 - Octoprint
@@ -24,10 +28,6 @@ screenshots:
 ![Settings screen](https://github.com/rriet/OctoPrint-Framer/blob/master/assets/img/settings.png "Settings screen")
 
 featuredimage: assets/img/screen.png
-
-## Description
-This plugin adds a button to verify the working area of a Gcode on a CNC or Laser cutter.
-It works by extracting the maximum and minimum X and Y and sending a G0 code to move the CNC/Laser to the corner locations.
 
 ## Setup
 
