@@ -1,15 +1,16 @@
 
 # OctoPrint-Framer
 
-## author:
+### author:
 - Ricardo Riet Correa
 
-## license: 
+### license: 
 GNUv3
 
-## date: 
+### date: 
 2022-04-05
 
+### Links
 homepage: https://github.com/rriet/OctoPrint-Framer
 
 source: https://github.com/rriet/OctoPrint-Framer
