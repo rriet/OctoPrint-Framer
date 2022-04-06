@@ -21,7 +21,7 @@ archive: https://github.com/rriet/OctoPrint-Framer/archive/master.zip
 This plugin adds a button to verify the working area of a Gcode on a CNC or Laser cutter.
 It works by extracting the maximum and minimum X and Y and sending a G0 code to move the CNC/Laser to the corner locations.
 
-tags:
+#### tags:
 - Octoprint
 - Laser
 - CNC
