@@ -20,71 +20,42 @@ tags:
 - CNC
 
 screenshots:
-- url: url of a screenshot, /assets/img/...
-  alt: alt-text of a screenshot
-  caption: caption of a screenshot
-- url: url of another screenshot, /assets/img/...
-  alt: alt-text of another screenshot
-  caption: caption of another screenshot
+- url: assets/img/screen.png
+  alt: Main screen with Frame button
+  caption: Frame button and plugin output
+- url: assets/img/settings.png
+  alt: Settings screen
+  caption: Settings screen.
 - ...
 
-# TODO
-featuredimage: url of a featured image for your plugin, /assets/img/...
-
-# TODO
-# You only need the following if your plugin requires specific OctoPrint versions or
-# specific operating systems to function - you can safely remove the whole
-# "compatibility" block if this is not the case.
-
-compatibility:
-
-  # List of compatible versions
-  #
-  # A single version number will be interpretated as a minimum version requirement,
-  # e.g. "1.3.1" will show the plugin as compatible to OctoPrint versions 1.3.1 and up.
-  # More sophisticated version requirements can be modelled too by using PEP440
-  # compatible version specifiers.
-  #
-  # You can also remove the whole "octoprint" block. Removing it will default to all
-  # OctoPrint versions being supported.
-
-  octoprint:
-  - 1.4.0
-
-  # List of compatible operating systems
-  #
-  # Valid values:
-  #
-  # - windows
-  # - linux
-  # - macos
-  # - freebsd
-  #
-  # There are also two OS groups defined that get expanded on usage:
-  #
-  # - posix: linux, macos and freebsd
-  # - nix: linux and freebsd
-  #
-  # You can also remove the whole "os" block. Removing it will default to all
-  # operating systems being supported.
-
-  os:
-  - linux
-  - windows
-  - macos
-  - freebsd
-
-  # Compatible Python version
-  #
-  # It is recommended to only support Python 3 for new plugins, in which case this should be ">=3,<4"
-  # 
-  # Plugins that wish to support both Python 2 and 3 should set it to ">=2.7,<4".
-  #
-  # Plugins that only support Python 2 will not be accepted into the plugin repository.
-
-  python: ">=3,<4"
+featuredimage: assets/img/screen.png
 
 ---
+## Description
+This plugin adds a button to verify the working area of a Gcode on a CNC or Laser cutter.
+It works by extracting the maximum and minimum X and Y and sending a G0 code to move the CNC/Laser to the corner locations.
 
-**TODO**: Longer description of your plugin, configuration examples etc. This part will be visible on the page at
-http://plugins.octoprint.org/plugin/framer/
+## Setup
+
+Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html) or manually using this URL:
+
+    https://github.com/rriet/OctoPrint-Framer/archive/master.zip
+
+## Usage
+### Configuration
+After installation restart OctoPrint, go to the Settings tab and set the CNC/Laser movement speed.
+
+### Frame function
+- Connect to the CNC/Laser
+- Upload and load the Gcode file
+- Home the CNC/Laser or use a G92 code to set the origin point
+- Click the Frame button
+- Observe the movement of the CNC/Laser to see where the work area is on the plataform. Be ready to stop the machine to avoid colisions.
+
+## Warmings: 
+- The plugin will not move the Z axis
+- Make sure the area is clear to avoid colisions.
+
+## Disclaimer:
+I, the plugin author cannot be held responsible for any damage to equipment or injuries that may arise from using the plugin. I, the plugin author, make no guarantees that this plugin will work or continue to work.
+
