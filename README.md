@@ -20,12 +20,8 @@ tags:
 - CNC
 
 screenshots:
-- url: assets/img/screen.png
-  alt: Main screen with Frame button
-  caption: Frame button and plugin output
-- url: assets/img/settings.png
-  alt: Settings screen
-  caption: Settings screen.
+![Main screen with Frame button](https://github.com/rriet/OctoPrint-Framer/blob/master/assets/img/screen.png "Frame button and plugin output")
+![Settings screen](https://github.com/rriet/OctoPrint-Framer/blob/master/assets/img/screen.png "Settings screen")
 
 featuredimage: assets/img/screen.png
 
