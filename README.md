@@ -21,7 +21,7 @@ tags:
 
 screenshots:
 ![Main screen with Frame button](https://github.com/rriet/OctoPrint-Framer/blob/master/assets/img/screen.png "Frame button and plugin output")
-![Settings screen](https://github.com/rriet/OctoPrint-Framer/blob/master/assets/img/screen.png "Settings screen")
+![Settings screen](https://github.com/rriet/OctoPrint-Framer/blob/master/assets/img/settings.png "Settings screen")
 
 featuredimage: assets/img/screen.png
 
