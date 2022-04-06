@@ -11,7 +11,9 @@ GNUv3
 2022-04-05
 
 homepage: https://github.com/rriet/OctoPrint-Framer
+
 source: https://github.com/rriet/OctoPrint-Framer
+
 archive: https://github.com/rriet/OctoPrint-Framer/archive/master.zip
 
 ## Description
